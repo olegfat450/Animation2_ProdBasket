@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorfr1"
+    tools:context=".Fragment2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/blue"
+        android:layout_weight="1"
+        android:text="Корзина"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listTv"
+        android:layout_width="match_parent"
+        android:layout_height="612sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+
+        tools:listitem="@layout/list_item">
+
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/floatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_margin="18dp"
+        android:backgroundTint="@color/white"
+
+        android:clickable="true"
+
+        android:focusable="true"
+
+
+        android:src="@android:drawable/stat_notify_sync_noanim"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/buttonDiv"
+
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="-" />
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/amount_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="0" />
+
+    <TextView
+        android:id="@+id/buttonAdd"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+" />
+</LinearLayout>

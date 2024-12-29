@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment1"
+    android:background="@color/colorfr1"
+
+
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:listitem="@layout/list_item"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/floatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+
+        android:layout_margin="26dp"
+        android:backgroundTint="@color/white"
+
+        android:clickable="true"
+
+        android:focusable="true"
+
+
+        android:src="@android:drawable/stat_notify_sync_noanim"
+
+
+        app:rippleColor="@color/white"
+
+
+        >
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</FrameLayout>
